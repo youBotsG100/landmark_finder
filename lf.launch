@@ -1,0 +1,11 @@
+<launch>
+  <node 
+    name="landmark_finder" 
+    pkg="landmark_finder" 
+    type="landmark_finder" 
+    respawn="true"
+    output="screen" />
+	
+	<include file="$(find openni2_launch)/launch/openni2.launch"/>
+   
+</launch>
